@@ -93,8 +93,14 @@ grid-row: 11/12;
 }
 @media(max-width:510px){
     .main-picture{
+        margin-left: 3vh;
         grid-column: 1/6;
         grid-row:3/6
 
+    }
+}
+@media(max-width:400px){
+    .main-picture{
+        margin-left: 0;
     }
 }

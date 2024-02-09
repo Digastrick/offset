@@ -340,6 +340,7 @@ main {
   .plus-content {
     max-height: 1500px;
     height: inherit;
+    grid-column: 1/9;
   }
   .plus-content__title {
     grid-row: 1/2;
@@ -605,6 +606,7 @@ main {
   border-radius: 210px;
   background: radial-gradient(circle at top, #5F38FF, #FF0EDE);
   filter: blur(50px);
+  -webkit-filter: blur(50px);
   transform: rotate(-12deg);
   opacity: 0.2;
 }
@@ -616,6 +618,7 @@ main {
   border-radius: 210px;
   background: radial-gradient(circle at top, #5F38FF, #FF0EDE);
   filter: blur(50px);
+  -webkit-filter: blur(50px);
   transform: rotate(-12deg);
   opacity: 0.2;
 }
@@ -673,9 +676,10 @@ main {
   border-radius: 100px;
 }
 .card-plus__img::before {
-  content: url("../../img/smile1.webp");
+  content: url("../../img/smile1.png");
   position: absolute;
   filter: blur(9px);
+  -webkit-filter: blur(9px);
 }
 .card-plus__text {
   grid-row: 3/4;
@@ -708,6 +712,7 @@ main {
   border-radius: 100px;
   position: absolute;
   filter: blur(7px);
+  -webkit-filter: blur(7px);
 }
 
 @media (max-width: 730px) {
@@ -825,8 +830,14 @@ main {
 }
 @media (max-width: 510px) {
   .main-picture {
+    margin-left: 3vh;
     grid-column: 1/6;
     grid-row: 3/6;
+  }
+}
+@media (max-width: 400px) {
+  .main-picture {
+    margin-left: 0;
   }
 }
 .button-start {
@@ -941,6 +952,7 @@ main {
   z-index: 0;
   background: linear-gradient(#C3F33A, #29D159);
   filter: blur(50px);
+  -webkit-filter: blur(50px);
   transform: rotate(-12deg);
   opacity: 0.2;
 }

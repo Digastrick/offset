@@ -21,10 +21,10 @@
          position: relative;
         border-radius: 100px;
         &::before{
-            content: url('../../img/smile1.webp');
+            content: url('../../img/smile1.png');
             position: absolute;
             filter: blur(9px);
-
+            -webkit-filter: blur(9px);
         }
       
 }
@@ -60,6 +60,7 @@
     border-radius: 100px;
     position: absolute;
     filter: blur(7px);
+    -webkit-filter: blur(7px);
 }
 
 @media(max-width:730px){

@@ -155,6 +155,7 @@
     .plus-content{
         max-height: 1500px;
         height: inherit;
+        grid-column: 1/9;
         &__title{
             grid-row: 1/2;
             font-size: 23px;
