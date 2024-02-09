@@ -1,0 +1,31 @@
+.purple-elipse{
+    @include perpleElipse;
+}
+.purple-elipse_big{
+    @include perpleElipseBig;
+}
+.purple-ellipse__wrapper1{
+    position: absolute;
+    right: 0;
+    top:0;
+}
+.purple-ellipse__wrapper2{
+    position: absolute;
+    bottom: 0;
+}
+@media(max-width:1300px)
+{
+    .purple-elipse_big{
+        height: 200px;
+        width: 200px;
+    }
+}
+@media(max-width:600px){
+    .purple-elipse{
+        max-width: 137px;
+        max-height: 137px;
+    }
+    .purple-ellipse__wrapper1{
+    top:-50px;
+    }
+}

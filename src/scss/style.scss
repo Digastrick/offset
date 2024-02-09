@@ -1,0 +1,21 @@
+//миксины 
+@import './mixin/mixinText.scss';
+@import './mixin/mixinElipse.scss';
+@import './mixin/mixinButton.scss';
+//общие стили 
+@import 'common.scss';
+@import 'variables.scss';
+
+//стили страниц
+@import './page/start.scss';
+@import './page/plusLern.scss';
+
+//стили компонентов
+@import './component/menu.scss';
+@import './component/logo.scss';
+@import './component/purpleElipse.scss';
+@import './component/cardPlus.scss';
+@import './component/mainImg.scss';
+@import './component/buttonStart.scss';
+@import './component/popUp.scss';
+

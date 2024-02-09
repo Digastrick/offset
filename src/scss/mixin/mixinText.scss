@@ -1,0 +1,6 @@
+@mixin textOption($color, $font-size,$font-weight){
+    font-family:'Inter';
+    font-weight: $font-weight;
+    color:$color;
+    font-size: $font-size;
+}

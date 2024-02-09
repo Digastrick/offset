@@ -1,0 +1,75 @@
+.card-plus{
+    display: grid;
+    max-height: 310px;
+    max-width: 310px;
+    height: 100vh;
+    background-color: #333E51;
+    opacity: 0.9;
+    line-height: 25px;
+    @include textOption($color_white,19px,400);
+    grid-template-rows: repeat(5, 1fr);
+    justify-items: center;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+    gap:25px;
+    text-align: center;
+    &__img{
+        display: grid;
+        grid-row: 2/3;
+         
+         position: relative;
+        border-radius: 100px;
+        &::before{
+            content: url('../../img/smile1.webp');
+            position: absolute;
+            filter: blur(9px);
+
+        }
+      
+}
+
+    &__text{
+        grid-row:3/4;
+        max-width: 260px;
+        width: 100vw;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        max-height: 260px;
+        height: 100vh;
+        max-width: 260px;
+        width: 100vw;
+        border-radius: 20px;
+        top:70px;
+        z-index: -1;
+        background-color: #333E51;
+        opacity: 0.8;
+    }
+}
+.glow{
+    display: grid;
+        grid-row: 2/3;
+         
+         position: relative;
+        border-radius: 100px;
+}
+.glow::before{
+    content: url('../../img/smile4.webp');
+    border-radius: 100px;
+    position: absolute;
+    filter: blur(7px);
+}
+
+@media(max-width:730px){
+    .card-plus{
+        max-width: 260px;
+        max-height: 290px;
+        font-size: 16px;
+        &::before{
+            max-height: 235px;
+            max-width: 226px;
+        }
+    }
+}

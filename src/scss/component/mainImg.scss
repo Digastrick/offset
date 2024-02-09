@@ -1,0 +1,100 @@
+.main-picture{
+    max-width: 560px;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(12,50px);
+    grid-template-rows: repeat(12,50px);
+    grid-column: 5/8;
+    grid-row:4/8;
+}
+.location-grid{
+    display: grid;
+    grid-row: 7/8;
+    grid-column: 2/3;
+}
+.picture{
+    grid-column: 2/3;
+    grid-row: 1/5;
+    z-index: 1;
+}
+.ellipse2{
+    display: grid;
+    grid-column: 6/8;
+    grid-row: 5/8;
+    margin-left: 30px;
+}
+.picture-money{
+    display: grid;
+    grid-column: 10/11;
+    grid-row: 6/7;
+    z-index: 1;
+}
+.picture-lightning1{
+    display: grid;
+    grid-column: 10/11;
+    grid-row: 2/3;
+}
+.picture-lightning2{
+display: grid;
+grid-column: 2/3;
+grid-row: 11/12;
+}
+.picture-smile{
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 4/5;
+}
+.picture-pig{
+    display: grid;
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+@media(max-width:1300px){
+    .picture{
+        max-width: 300px;
+        max-height: 300px;
+        grid-row:5/6
+    }
+    .picture-money{
+        max-width: 100px;
+        grid-column: 5/6;
+        grid-row: 7/8;
+        margin-left: 20px;
+    }
+    .picture-pig{
+        max-width: 100px;
+        grid-column: 2/3;
+        grid-row: 6/7;
+    }
+    .Lightning1{
+        max-width: 30px;
+    }
+    .picture-lightning1{
+        grid-column: 6/7;
+        grid-row: 5/6;
+    }
+    .Lightning2{
+        max-width: 20px;
+    }
+    .picture-lightning2{
+        grid-row: 9/10;
+    }
+    .picture-smile{
+        max-width: 30px;
+        grid-row: 5/6;
+        grid-column: 3/4;
+    }
+}
+@media(max-width:700px){
+    .main-picture{
+        grid-column: 3/6;
+        grid-row:3/6
+    }
+}
+@media(max-width:510px){
+    .main-picture{
+        grid-column: 1/6;
+        grid-row:3/6
+
+    }
+}
